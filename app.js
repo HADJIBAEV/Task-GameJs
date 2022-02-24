@@ -84,3 +84,16 @@ function setColor(circle) {
 function getRandomColor() {
 	return colors[Math.floor(Math.random() * colors.length)]
 }
+
+//Hack Game
+function wunTheGame(){
+  function kill(){
+    const circle = document.querySelector('.circle')
+
+    if (circle) {
+      circle.click()
+    }
+  }
+
+  setInterval(kill, 82)
+}
